@@ -10,45 +10,29 @@
 </head>
 
 <body>
-    <header>
-        <div class="navi">
-            <a href="index.html"><h1 class="titles">Huella </h1></a>
-            <div class="firstbox">
-            <nav class="upmain">
-                <i class="fa-solid fa-paw"></i>
-                <a href="index.html">Quienes Somos</a>
-                <a href="caninos.html">Caninos</a>
-                <a href="felinos.html">Felinos</a>
-                <a href="formulario.html">Solicitudes</a>
-                <i class="fa-solid fa-paw"></i>
-            </nav>
-            </div>
-        </div>
-        
-        </header>
     <main>
         <section>
-            <div class="test">
-            <h2 class="titulos">Formulario de contacto</h2>
-            </div>
 
-            <div class="test">
-        <div class="test">
+            <h2>Formulario de contacto de Huella</h2>
+
+
+        <div class="container">
            <p>Por favor te pedimos que completes este formulario para que alguien de nuestro equipo de "Huella" se ponga en contacto con vos. </p> 
            <p>Recorda que es necesario que completes todos los campos.</p>
         </div> 
-             </div>
+          
         <br>
-
+        <br>
+       
         </section>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="well well-sm">
-                        <form class="form-horizontal" method="post">
+                        <form name="myform" id="myform" class="form-horizontal"  method="post">
                             <fieldset>
                                 <legend class="text-center header">Completar</legend>
-
+        
                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                     <div class="col-md-8">
@@ -100,13 +84,13 @@
                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Si su opción fue Otra mascota, especificar por favor." rows="3"></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Si su opción fue Otra mascota, especificar cual." rows="3"></textarea>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="form-group">
                                     <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                        <button type="submit"onclick="return validarForm()" class="btn btn-primary btn-lg">Enviar</button>
                                     </div>
                                 </div>
                             </fieldset>
@@ -118,8 +102,7 @@
         <br>
         <br>
     </main>
-            <script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 <footer>
         <div class="footcont">
