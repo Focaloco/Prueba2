@@ -1,7 +1,7 @@
 function validarForm() {
     let x = document.forms["myform"]["email"].value;
     if (x == "") {
-      alert("Necesitamos al menos un email de contacto");
+      alert("Para contactarte necesitamos por lo menos un email");
       return false;
     }
   }
