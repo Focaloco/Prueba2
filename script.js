@@ -23,26 +23,3 @@ function traer() {
        }
 
 
-//const{ createApp } = Vue
-//  createApp({
-//      data(){
-//        return{
-//          mensaje: "Hola Mundo con Vue",
-//          curso: "Codo a Codo"
-//        }
-//      }
-//  }).mount("#app")
-
-//fetch('https://api.coindesk.com/v1/bpi/currentprice.json') 
-//  .then(response => response.json()) 
-//  .then(data => console.log(data))
-
-
-//var contenido = document.querySelector("#contenido");
-//function traer() {
-//  fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
-//    .then(data => data.text())
-//    .then(data => {
-//      contenido.innerHTML= "${data}"})
-//    }
-
