@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contain my-5 text-center">
+        <h1>Ejemplo Fetch</h1>
+    <button class="btn-danger" onclick="getNombre()" >Obtener</button>
+    </div>
+    <div class="mt-5" id="contenido">
+    </div>
+
+<script> 
+const getNombre = (idPost) => {
+    fetch(`https://jsonplaceholder.typicode.com/${idPost}`)
+      .then(res => { return res.json()  })
+      // Solicitamos con otro fetch() los datos del autor del posteo
+      .then(post => {
+         console.log(post.userId)
+         fetch(`https://jsonplaceholder.typicode.com/users/${post.userId}`)
+           .then(res => { return res.json() })
+           .then(user => { console.log(user.name) })
+      })
+   }
+getNombre(99); 
+</script>   
+</body>
+</html>
