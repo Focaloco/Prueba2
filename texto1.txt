@@ -1,0 +1,12 @@
+1 Cambiar las fuentes y colores y posicion de la pagina (diseño)
+2 Formulario: Bootstrap (1 form para dar en adopcion y otra para adoptar)
+	Pensar los requerimientos.
+      Opcional chequear el mail con javascript(verificador de mail)
+3 #Animacion o transformar o transicion (posibilidad de transformar un corazon un me gusta)
+  Aplicado el hover sumar el me gusta pendiente.
+4 Consumir la api rest (pendiente)
+5 Responsive: Hacer pagina responsive Ajustar los puntos de cortes
+6 Diseño chequear los iconos utilizar el link ya realizado.
+7 Revisar los links
+8 Imagenes buscar en picsum 10 imagenes de cada animal optimizar las imagenes. (Drive o link)
+                 
