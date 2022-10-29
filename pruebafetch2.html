@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/c25a182a19.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Huellitas</title>
 </head>
 <header>
     
@@ -14,18 +14,19 @@
     <div class="firstbox">
     <nav class="upmain">
         <i class="fa-solid fa-paw"></i>
-        <a href="">Quienes Somos</a>
-        <a href="">Caninos</a>
-        <a href="">Felinos</a>
-        <a href="">Solicitudes</a>
+        <a href="index.html">Quienes Somos</a>
+        <a href="caninos.html">Caninos</a>
+        <a href="felinos.html">Felinos</a>
+        <a href="formulario.html">Solicitudes</a>
+        <a href="pruebafetch2.html">Red Huella</a>
         <i class="fa-solid fa-paw"></i>
     </nav>
     </div>
 </header>
 <body>
     <div class="contain my-5 text-center">
-        <h1>Usuarios que utilizaron nuestra Web</h1>
-        <h2>Si tenés dudas contactálos que ellos te van a responder exclusivamente por el correo electrónico de pantalla </h2>
+        <h2>Usuarios que utilizaron nuestra Web</h1>
+        <h4>Si tenés dudas contactalos ellos forman parte de nuestra red y te van a responder exclusivamente por el correo electrónico de pantalla </h2>
         <br>
         <br>
         <br>
@@ -39,22 +40,7 @@
     <div class="mt-5" id="contenido">
     </div>
 
-<script>
-function traer() {
-    fetch('https://randomuser.me/api')
-        .then(res => res.json())
-        .then(res => {
-             console.log(res)
-             console.log(res.results[0].email)
-             contenido.innerHTML= `
-               <img src="${res.results[0].picture.large}
-                 " width="200px" 
-                 class="img-fluid rounded-circle">
-               <p>Nombre: ${res.results[0].name.first}</p>
-               <p>Mail: ${res.results[0].email}</p>`
-          })
-       }
-</script>     
+<script src="script.js"></script>     
 </body>
 <footer>
     <div class="footcont">
