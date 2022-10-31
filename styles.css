@@ -13,7 +13,10 @@ a{
 body{
     background-color: #070f4e;
     color: #f5ebeb;
-    min-height: calc(100vh + 200px);
+    min-height: fit-content;
+    margin-bottom: 13rem;
+    clear: both;
+    
 }
 img{
     
@@ -102,50 +105,29 @@ img{
     border: 1px solid black;
     justify-content: center;
     align-items: baseline;
-    background-color: #f5ebeb;
+    background-color: #3eaac0;
     color: #070f4e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-shadow: 0px 5px 25px #2772db;
 }
 
 .pics a{
-    color: #3ab1c8;
+    color: #02191e;
 }
 
 .texts{
     align-items: center;
 }
 
-.socialmedia{
-   display: grid;
-   align-self: flex-start ;
-}
-
-.abouts{
-    display: grid;
-    align-self: flex-end;
-    
-}
-
-.logos{
-    display: grid;
-    justify-content: center;
-
-}
 
 
-#prueba{
+
+
+#like{
     background-color: #070f4e;
-    color: #f5ebeb;
-    padding: 4px 7px;
-    border: 1px solid violet;
+    color: #ffffff;}
 
-    transition-property: all;
-    transition-duration: 100ms;
-    transition-timing-function: ease-in;
-    transition-delay: 50ms;
-}
-
-#prueba:hover{
+#like:hover{
     background-color: #3ab1c8;
     color: rgb(204, 245, 170);
     padding: 4px 7px;
@@ -159,23 +141,55 @@ img{
 
 }
 
-.container{
-    display: flex;
+.footcont{
+    display : grid;
+    grid-gap: 10px;
+    grid-template-columns:(1fr, 2fr, 1fr);    
     align-items: center;
+    background-color: #2772db;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    grid-column: -1/1 ;
+    padding: 0%;
+    
+    
+    
 }
 
-.footcont{
-    display : flex;
-    justify-content: space-between;
+.cont1{
+    grid-column: -1 / 1;
+    grid-row: 1;
+    margin: 2rem;
+    padding: auto;
+    
+    
+  }
+
+.cont2{
+    display: flex;
+    grid-column: 2/4;
+    grid-row: 1;
     align-items: center;
-    bottom: 0;
-    width: 100%;
-    min-width: 60%;
-    max-width: 100%;
-    position: fixed;
-    background-color: #2772db;
-    height: 150px;
+    justify-content: space-between;
+       
 }
+
+#footpic{
+    border-radius: 65%;
+    border-style: groove;
+    border-color: aqua;
+}
+
+.cont3{
+    grid-column: 5 ;
+    grid-row: 1;
+    justify-content: space-around;
+    padding: auto;
+  }
+
+
+
 
 /*Gama colores
 #2772db
